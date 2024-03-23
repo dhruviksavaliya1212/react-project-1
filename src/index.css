@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  box-sizing: border-box;
+}
+
+@layer utilities{
+  .hero-bg-color{
+    @apply bg-gradient-to-r from-zinc-300 to-gray-300 dark:from-gray-950/40 dark:to-gray-950/60 dark:text-white 
+  }
+}

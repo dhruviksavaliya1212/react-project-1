@@ -1,0 +1,17 @@
+@media screen and (max-width:640px) {
+  .search{
+     height: 40px;
+      top: 44px;
+      right: -16px;
+      width: 100%;
+      position: absolute;
+    }
+    .searchicon{
+      top:45%;
+      left: 7%;
+    }
+    .searchinput{
+      margin-left: 5%;
+      padding-left: 30px ;
+    }
+}
