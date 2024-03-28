@@ -8,7 +8,7 @@ const ProductCard2 = ({ productData2 , handleClick , warning }) => {
         {/* card section */}
         {productData2.map((data) => (
           <div key={data.id} className="group">
-            <div className="relative">
+            <div data-aos="fade-up" data-aos-delay={data.aosDelay}  className="relative">
               <img src={data.img} alt="" className=" h-[180px] w-[260px] object-cover rounded-md"/>
               {/* Hover button */}
               <div className=" hidden group-hover:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center group-hover:backdrop-blur-sm h-full justify-center items-center duration-200">
@@ -20,7 +20,7 @@ const ProductCard2 = ({ productData2 , handleClick , warning }) => {
                 )}
               </div>
             </div>
-            <div className="leading-7">
+            <div data-aos="fade-down" data-aos-delay={data.aosDelay}  className="leading-7">
               <h2 className=" font-semibold">{data.title}</h2>
               <h2 className=" font-bold"> ₹ {data.price}</h2>
             </div>

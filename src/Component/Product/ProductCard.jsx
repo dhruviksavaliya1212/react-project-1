@@ -10,7 +10,7 @@ const ProductCard = ({ productData, handleClick, warning }) => {
 
         {productData.map((data) => (
           <div key={data.id} className="group">
-            <div className="relative">
+            <div data-aos="fade-up" data-aos-delay={data.aosDelay}  className="relative">
               <img
                 src={data.img}
                 alt=""
@@ -31,7 +31,7 @@ const ProductCard = ({ productData, handleClick, warning }) => {
                   )}
               </div>
             </div>
-            <div className="leading-7">
+            <div data-aos="fade-down" data-aos-delay="500"  className="leading-7">
               <h2 className=" font-semibold">{data.title}</h2>
               <h2 className=" font-bold"> ₹ {data.price}</h2>
             </div>

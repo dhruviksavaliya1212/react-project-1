@@ -10,6 +10,8 @@ const Navbar = ({size,setShow}) => {
 
   function clicked() {
     setClick(click == "false" ? "true" : "false");
+    // console.log("Click"+click)
+    // console.log(setClick)
   }
   return (
     <div className="relative z-40">
@@ -25,19 +27,19 @@ const Navbar = ({size,setShow}) => {
             </a>
             {/* Navbar Links */}
             <div
-              className={`lg:block absolute transition-all z-[999] sm:z-0 duration-200 bg-zinc-200 dark:bg-gray-950/90 rounded-xl top-12 right-[10vw] lg:right-0 lg:w-0 w-[250px] h-screen lg:h-6 lg: lg:top-0 lg:opacity-100 lg:relative ${
-                click == "false" ? "opacity-0" : "opacity-100"
-              }`} onClick={()=> setShow(true)}
+              className={`lg:block absolute transition-all z-[50] sm:z-0 duration-200 bg-zinc-200 dark:bg-gray-950/90 rounded-xl top-12 right-[10vw] lg:right-0 lg:w-0 w-[250px] h-screen lg:h-6 lg: lg:top-0 lg:opacity-100 lg:relative ${
+                click == "false" ? "hidden" : "block"
+              }`} 
             >
               <ul
-                className={`flex lg:flex-row flex-col gap-10 items-center justify-center top-36 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:top-0 lg:-translate-x-0 lg:-translate-y-0 lg:gap-4  absolute`}
+                className={`flex lg:flex-row flex-col gap-10 items-center justify-center top-36 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:top-0 lg:-translate-x-0 lg:-translate-y-0 lg:gap-4  absolute `}
               >
                 {["Home", "Shop", "About", "Blogs"].map((data, index) => (
-                  <li>
+                  <li onClick={()=> setShow(true)}>
                     <a
                       href="#"
                       key={index}
-                      className="px-2 font-semibold text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white duration-200"
+                      className="px-2 font-semibold text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white duration-200" 
                     >
                       {data}
                     </a>
@@ -79,13 +81,13 @@ const Navbar = ({size,setShow}) => {
                 onClick={clicked}
                 className={` cursor-pointer transition-all duration-200 lg:hidden absolute text-xl text-gray-600 dark:text-gray-400 ${
                   click == "true" ? "opacity-0" : "opacity-100"
-                }`}
+                } `}
               />
               <IoMdClose
                 onClick={clicked}
                 className={` cursor-pointer transition-all duration-200 lg:hidden text-2xl text-gray-600 dark:text-gray-400 ${
                   click == "false" ? "opacity-0" : "opacity-100"
-                } `}
+                }`}
               />
             </div>
           </div>

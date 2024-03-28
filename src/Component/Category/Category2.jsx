@@ -10,9 +10,9 @@ const Category2 = () => {
       <div className="container">
         <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {/* first col */}
-          <div className="sm:col-span-2 py-10 pl-5 sm:pl-14 lg:pl-5 bg-gradient-to-r from-zinc-200 to-gray-200 text-white rounded-2xl relative h-[320px] flex items-end">
+          <div data-aos="fade-up" data-aos-delay="0" className="sm:col-span-2 py-10 pl-5 sm:pl-14 lg:pl-5 bg-gradient-to-r from-zinc-200 to-gray-200 text-white rounded-2xl relative h-[320px] flex items-end">
             <div>
-              <div className="mb-4">
+              <div data-aos="fade-down" data-aos-delay="0" className="mb-4">
                 <p className="lg:mb-[2px] mb-3  text-xl text-gray-500">Enjoy</p>
                 <p className=" text-2xl sm:text-4xl text-zinc-500 font-semibold mb-[2px]">with</p>
                 <p className=" text-4xl sm:text-6xl text-zinc-500 lg:text-[35px] xl:text-[45px] font-bold opacity-50 mb-5 lg:mb-3"> Console</p>
@@ -26,9 +26,9 @@ const Category2 = () => {
             <img src={Image1} alt="" className=" w-[200px]  right-2 top-[30px] absolute bottom-0"/>
           </div>
           {/* second col */}
-          <div className="py-10 pl-5 bg-gradient-to-br from-brandGreen to-brandGreen/95 text-white rounded-2xl relative h-[320px] flex items-end">
+          <div data-aos="fade-up" data-aos-delay="200" className="py-10 pl-5 bg-gradient-to-br from-brandGreen to-brandGreen/95 text-white rounded-2xl relative h-[320px] flex items-end">
             <div>
-              <div className="sm:mb-20 mb-4">
+              <div data-aos="fade-down" data-aos-delay="200" className="sm:mb-20 mb-4">
                 <p className="mb-[2px] text-gray-200">Enjoy</p>
                 <p className=" text-2xl font-semibold mb-[2px]">with</p>
                 <p className=" text-4xl lg:text-[35px] xl:text-[45px] font-bold opacity-50 mb-2"> Vision</p>
@@ -42,9 +42,9 @@ const Category2 = () => {
             <img src={Image2} alt="" className=" w-[180px] absolute -right-0 top-[160px]"/>
           </div>
           {/* third col */}
-          <div className=" py-10 pl-5 bg-gradient-to-br from-brandBlue to-brandBlue/90 text-white rounded-2xl relative h-[320px] flex items-end">
+          <div data-aos="fade-up" data-aos-delay="400" className=" py-10 pl-5 bg-gradient-to-br from-brandBlue to-brandBlue/90 text-white rounded-2xl relative h-[320px] flex items-end">
           <div>
-              <div className="sm:mb-2 mb-4">
+              <div data-aos="fade-down" data-aos-delay="400" className="sm:mb-2 mb-4">
                 <p className="mb-[2px] text-gray-200">Enjoy</p>
                 <p className=" text-2xl font-semibold mb-[2px]">with</p>
                 <p className=" text-4xl lg:text-[35px] xl:text-[45px] font-bold opacity-50 mb-3"> Speaker</p>

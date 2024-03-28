@@ -23,7 +23,7 @@ const Cart = ({cart, setCart, handleChange}) => {
 })
   return (
     <div className='w-[100%] h-screen '>
-      <div className='container mt-10 sm:mt-5'>
+      <div className='container mt-10 sm:mt-5 relative z-30'>
       {
         cart.map((item)=>(
           <div className=' border-b-2  flex flex-col gap-5 sm:gap-0 sm:flex-row p-2 justify-between items-center' key={item.id}>
@@ -37,7 +37,7 @@ const Cart = ({cart, setCart, handleChange}) => {
               <h1 className=' text-lg font-semibold'>{item.count}</h1>
               <button className='border rounded-xl px-2 text-2xl'onClick={()=>handleChange(item, -1)}>−</button>
             </div>
-            <div>
+            <div className=''>
               <span className=' px-3 font-bold'>₹ {item.price}</span>
               <button className=' hover:scale-[1.1] duration-200 px-5 py-1 rounded-full bg-red-500 font-semibold' onClick={()=> handleRemove(item.id)}>Remove</button>
             </div>
